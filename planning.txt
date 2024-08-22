@@ -1,0 +1,31 @@
+polling application
+
+People can create poll and participate in voting. All polls visible to all users.
+
+Functionality
+
+1. User register/login
+2. See ongoing Polls
+3. User can vote only once on a poll
+4  User can change thier vote
+5. Stats of Poll visible after clicking on vote
+6. User can create poll
+7. While creating Poll change number of options (Min 2, Max 4);
+
+
+Routes
+
+User authentication:
+        /signup: POST - create a new user
+        /login:  POST - login to existing account
+
+Polls:  
+        /polls: GET -fetch all polls
+        /polls/create: POST  - create poll
+        /polls/:id GET - fetch the specific poll
+        /poll/:id/:optionid POST- cast vote
+
+profile: 
+        /profile: GET- get user info
+
+
